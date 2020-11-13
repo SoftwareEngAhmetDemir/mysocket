@@ -1,0 +1,22 @@
+<button onclick="cagir()">send</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+//  function send(){
+//  socket.emit('clientEvent') // io.emit , socket.broadcast.emit// call socket clientEvent from server side // nodejs'te calistirmak 
+//  }
+//  socket.on('deneme',(data)=>{
+// console.log('alo one',data)
+//  })
+
+socket.on('call',()=>{
+  console.log('called');
+})
+
+// function cagir()
+// {
+//   socket.emit('event');
+// }
+
+</script>
